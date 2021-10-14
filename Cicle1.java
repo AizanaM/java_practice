@@ -9,7 +9,7 @@ public class Cicle1{
 
         while(true){
             number = scanner.nextInt();
-            if(number==0){
+            if(=0){
                 break;
             }
             counter++;

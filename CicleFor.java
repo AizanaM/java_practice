@@ -1,41 +1,41 @@
 import java.util.Scanner;
 public class CicleFor{
     public static void main(String[]args){
-        
         Scanner scanner = new Scanner(System.in);
-        double salary = scanner.nextDouble();
-        int percent;
-        double salaryWthRate;
+        String first = scanner.nextLine();
+        String second = scanner.nextLine();
+        String third = scanner.nextLine();
         
-        if(salary>0 && salary<=400){
-            percent = 15;
-            salaryWthRate = (salary*percent)/100;
-            salary += salaryWthRate;
+        if (first.equals("vertebrado")){
+            if(second.equals("ave")){
+                if(third.equals("carnivoro")){
+                    System.out.println("aguia");
+                } else if(third.equals("onivoro")){
+                    System.out.println("pomba");
+                } 
+            } else if(second.equals("mamifero")){
+                 if(third.equals("onivoro")){
+                    System.out.println("homem");
+                } else if(third.equals("herbivoro")){
+                    System.out.println("vaca");
+                }
+            }
         }
-        else if(salary>=400.01 && salary<800){
-            percent = 12;
-            salaryWthRate = (salary*percent)/100;
-            salary += salaryWthRate;
+        else if (first.equals("invertebrado")){
+            if (second.equals("inveto")){
+                if(third.equals("hematofago")){
+                    System.out.println("pulga");
+                } else if (third.equals("herbivoro")){
+                    System.out.println("lagarta");
+                }
+            } else if (second.equals("anelideo")){
+                if(third.equals("hematofago")){
+                    System.out.println("sanguessuga");
+                } else if (third.equals("onivoro")){
+                    System.out.println("minhoca");
+                }
+            }
         }
-        else if(salary>=800.01 && salary<1200){
-            percent = 10;
-            salaryWthRate = (salary*percent)/100;
-            salary += salaryWthRate;
-        }
-        else if(salary>=1200.01 && salary<2000){
-            percent = 7;
-            salaryWthRate = (salary*percent)/100;
-            salary += salaryWthRate;
-        }
-        else if(salary>2000){
-            percent = 4;
-            salaryWthRate = (salary*percent)/100;
-            salary += salaryWthRate;
-        }
-        
-        System.out.printf("Novo salario: %.2f%n", salary);
-        System.out.printf("Reajuste ganho: %.2f%n", salaryWthRate);
-        System.out.println("Em percentual: " + percent + "%");
     }
-}
 
+  }
